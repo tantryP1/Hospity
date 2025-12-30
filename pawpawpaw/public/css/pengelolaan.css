@@ -1,0 +1,106 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #EEF5FF;
+    padding: 20px;
+}
+
+header {
+    position: absolute; /* Tetap di tempat relatif terhadap elemen parent */
+    top: 20px; /* Jarak dari atas */
+    right: 20px; /* Jarak dari kanan */
+    width: 40%; /* Lebar tetap */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk elemen input agar terlihat seperti berada di dalam box */
+.filter-container input[type="date"],
+.filter-container input[type="time"] {
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 16px;
+    color: #00449E;
+    background-color: #B4D4FF;
+    transition: box-shadow 0.2s ease;
+}
+
+.filter-container input[type="date"]:focus,
+.filter-container input[type="time"]:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
+}
+
+/* Gaya tombol */
+.filter-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #176B87;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: medium;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-container button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#daftar-antrian {
+    margin-top: 150px; /* Menambahkan jarak dari header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Memusatkan secara horizontal */
+    gap: 15px;
+}
+
+.reservasi-box {
+    background-color: rgba(96, 165, 255, 0.61);
+    padding: 15px;
+    width: 50%;
+    border-radius: 120px;
+    box-shadow: 0 4px 8px rgba(96, 165, 255, 0.61);
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reservasi-box h3 {
+    margin: 0;
+    padding: 0px 40px;
+    text-align: left;
+    font-size: 23px;
+    color: #00449E;
+}
+
+.reservasi-box p {
+    padding: 0 40px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #00449E;
+}
+
+.reservasi-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,94 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EEF5FF;
+    padding: 20px;
+}
+
+/* Gaya umum untuk header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+header img {
+    height: 40px; /* Ukuran logo */
+}
+
+header .back-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+header .back-button img {
+    height: 20px;
+}
+
+/* Kontainer untuk form edit */
+.edit-container {
+    max-width: 500px;
+    margin: 0 auto; /* Pusatkan kontainer */
+    background-color: #B4D4FF;
+    color: #00449E;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+/* Gaya form */
+form label {
+    display: block;
+    margin: 0px 0 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    color: #00449E;
+    font-size: 17px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #176B87;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: large;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,138 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EEF5FF;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #B4D4FF;
+    color: rgba(0, 68, 158, 0.61);
+    font-size: large;
+}
+
+.search-container input::placeholder {
+    color: rgba(0, 68, 158, 0.61);
+}
+
+.search-container button {
+    background-color: #176B87;
+    color: white;
+    font-size: large;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #00449E;
+}
+
+#daftar-antrian {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Susunan secara kolom */
+    justify-content: center; /* Memusatkan secara vertikal */
+    align-items: center; /* Memusatkan secara horizontal */
+    text-align: center;
+}
+
+#antrian-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column; /* Susunan secara kolom */
+    justify-content: center; /* Memusatkan secara vertikal */
+    align-items: center; /* Memusatkan secara horizontal */
+    padding: 30px;
+    gap: 20px;
+}
+
+.reservasi-box {
+    background-color: #B4D4FF;
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reservasi-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reservasi-box h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #00449E;
+}
+
+.reservasi-box p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #00449E;
+}
+
+.action-buttons {
+    position: absolute;
+    top: 25%;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.action-buttons button img {
+    background-color: rgba(0, 68, 158, 0.61);
+    width: 40px;
+    height: auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.action-buttons button:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEF5FF;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 350px;
+    height: 645px;
+    padding: 20px;
+    background-color: #B4D4FF;
+    color: #00449E;
+    justify-content: center; /* Rata tengah vertikal */
+    position: sticky; /* Tetap pada tempatnya */
+    top: 0; /* Jarak dari atas viewport */
+    bottom: 0; /* Jarak dari bawah viewport */
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Rata tengah horizontal */
+}
+
+.head a {
+    text-decoration: none; /* Menghilangkan underline */
+    font-weight: bold;
+    font-size: 40px;
+    color: #00449E;
+    padding-right: 15px;
+}
+
+.head h2 {
+    font-size: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+
+/* Gaya saat elemen mendapat fokus */
+input:focus {
+    outline: none; /* Menghilangkan outline default */
+    border: 1px solid #86B6F6; /* Ganti warna border */
+    color: #00449E; /* Warna teks tetap sama */
+    background-color: #E1EFFF; /* Latar belakang lebih terang */
+}
+
+/* Menjaga warna teks tetap setelah kehilangan fokus */
+input:not(:focus) {
+    color: #00449E; /* Menjaga warna teks tetap biru setelah fokus hilang */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #86B6F6;
+    color: rgba(0, 68, 158, 0.61);
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+}
+
+button {
+    width: 50%;
+    background-color: rgba(0, 68, 158, 0.61);
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    margin: 0px 70px;
+}
+
+button:hover {
+    background-color: #00449E;
+}
+
+.dokter-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.dokter-box {
+    width: 250px;
+    padding: 15px;
+    background-color: #B4D4FF;
+    color: #00449E;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: none; /* Dokter awalnya tidak ditampilkan */
+}
+
+.dokter-box img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.dokter-box h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dokter-box p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.pesan-button {
+    text-align: center;
+    width: 50%;
+    background-color: rgba(0, 68, 158, 0.61);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px 55px;
+    transition: background-color 0.3s ease;
+}
+
+.pesan-button:hover {
+    background-color: #002C6D;
+}

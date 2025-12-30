@@ -1,0 +1,505 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Pastikan body mengambil seluruh tinggi dan lebar viewport */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Hindari scroll horizontal */
+    background-color: #EEF5FF;
+}
+
+/* Styling untuk header */
+header {
+    position: fixed; /* Agar header tetap di atas saat scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #E1EFFF; /* Background putih */
+    padding: 20px 20px; /* Padding untuk jarak antara konten dan tepi */
+    z-index: 1000; /* Agar header berada di atas elemen lain */
+}
+
+/* Container untuk logo dan menu */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Spasi antara logo dan menu */
+    align-items: center; /* Vertikal align */
+}
+
+/* Styling untuk logo */
+.logo {
+    margin: 0px;
+    width: 70px;
+}
+
+/* Styling untuk navigasi menu */
+.nav-links ul {
+    display: flex;
+    list-style: none; /* Menghilangkan bullet points */
+    margin-right: 50px;
+    padding: 0;
+}
+
+.nav-links li {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 15px; /* Jarak antar item menu */
+}
+
+.nav-links a {
+    text-decoration: none; /* Menghilangkan underline */
+    color: #00449E; /* Warna teks menu */
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Gaya ketika menu di-hover */
+.nav-links a:hover {
+    color: #176B87; /* Warna saat hover */
+}
+
+/* Styling untuk ikon */
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Styling untuk section hero */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Sesuai layar */
+    overflow: hidden;
+}
+
+/* Kontainer untuk konten hero */
+.hero-content {
+    display: flex; /* Aktifkan Flexbox */
+    width: 100%; /* Memastikan elemen memenuhi lebar */
+    flex-direction: column; /* Tumpuk elemen secara vertikal */
+    align-items: center; /* Rata tengah horizontal */
+    justify-content: center; /* Rata tengah vertikal */
+    height: 100vh; /* Isi seluruh tinggi viewport */
+    text-align: center; /* Agar teks rata tengah */
+}
+
+/* Teks Hero */
+.hero-text {
+    align-items: center;
+    max-width: 70%; /* Membatasi lebar teks */
+}
+
+/* Styling headline */
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #00449E;
+}
+
+/* Styling deskripsi */
+.hero-text p {
+    font-size: 1.9rem;
+    color: #00449E; /* Warna teks opsional */
+    align-content: center;
+    padding-bottom: 30px;
+}
+
+/* Gambar Hero */
+.hero-image img {
+    width: 390px; /* Membuat gambar responsif */
+    height: auto;
+    max-height: 90%; /* Tidak lebih tinggi dari kontainer */
+    mask-image: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); /* Gradasi transparansi */
+    -webkit-mask-image: linear-gradient(to left, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100%); /* Masking untuk browser WebKit */
+}
+
+/* Tombol CTA (Call to Action) */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #176B87;
+    color: #EEF5FF;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    color: #EEF5FF; /* Warna teks hover */
+    background-color: #5A94E1; /* Warna latar belakang hover */
+}
+
+/* Section About */
+.about-section {
+    position: relative; /* Untuk memposisikan elemen gambar */
+    padding: 100px 20px; /* Ruang sekitar konten */
+    text-align: center; /* Rata tengah teks */
+    height: 85vh;
+}
+  
+.about-content h1 {
+    font-size: 2.5rem;
+    color: #00449E;
+    margin-bottom: 20px;
+}
+  
+.about-content p {
+    font-size: 1.2rem;
+    color: #00449E;
+    max-width: 550px; /* Batasi lebar paragraf */
+    margin: 0 auto; /* Tengah secara horizontal */
+}
+  
+/* Gambar di Kanan dan Kiri */
+.about-image-left,
+.about-image-right {
+    position: absolute; /* Posisi absolut untuk gambar */
+    mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); /* Gradasi transparansi */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%); /* Masking untuk browser WebKit */
+}
+  
+.about-image-left {
+    width: 320px; /* Sesuaikan ukuran gambar */
+    bottom: 0; /* Tempatkan di bawah */
+    left: 5%; /* Tempatkan di kiri */
+}
+  
+.about-image-right {
+    bottom: 0; /* Tempatkan di bawah */
+    right: 5%; /* Tempatkan di kanan */
+    width: 250px;
+}
+
+/* Section Style */
+#kata-mereka {
+    padding: 50px 20px;
+    position: relative; /* Untuk dekorasi absolute */
+    text-align: center;
+    height: 85vh;
+}
+
+/* Judul Section */
+.section-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #00449E;
+}
+
+/* Container Komentar */
+.comments-container {
+    display: flex;
+    flex-wrap: wrap; /* Agar fleksibel untuk resolusi lebih kecil */
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column; /* Tumpuk elemen secara vertikal */
+    align-items: center; /* Rata tengah horizontal */
+}
+
+
+/* Baris Komentar */
+.comment-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative; /* Untuk mengatur positioning child element */
+}
+
+/* Box Komentar */
+.comment-box {
+    background-color: #B4D4FF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+    border-radius: 30px;
+    padding: 0px 40px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: right; /* Rata tengah horizontal */
+    justify-content: center; /* Rata tengah vertikal */
+    text-align: right;
+    gap: 20px;
+}
+
+/* Gaya Profil */
+.profile {
+    position: relative;
+    z-index: 2; /* Agar berada di atas box */
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #86B6F6;
+    position: absolute; /* Untuk memindahkan gambar sebagian */
+    top: -50px; /* Mengangkat gambar ke atas */
+    left: 5px; /* Menggeser gambar ke kiri */
+}
+
+.comment-box {
+    height: 100px;
+}
+/* Konten Komentar */
+.comment-box p {
+    font-size: 1.05rem;
+    color: #00449E;
+    padding: 0px 40px;
+    font-style: italic;
+    top: 15px;
+    right: -25px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Di belakang profile */
+}
+
+.comment-box .commenter-name {
+    font-weight: 350;
+    font-size: 0.9rem;
+    color: #00449E;
+}
+
+/* Dekorasi Tanda Tanya */
+.decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Tidak interaktif */
+    overflow: hidden;
+}
+
+.question-mark {
+    position: absolute;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #176B87;
+    animation: float 6s infinite ease-in-out;
+}
+
+/* Posisi Tanda Tanya */
+.question-mark:nth-child(1) {
+    top: 30%;
+    left: 10%;
+}
+
+.question-mark:nth-child(2) {
+    top: 60%;
+    left: 20%;
+}
+
+.question-mark:nth-child(3) {
+    top: 80%;
+    left: 5%;
+}
+
+.question-mark:nth-child(4) {
+    bottom: 30%;
+    right: 15%;
+}
+
+.question-mark:nth-child(5) {
+    bottom: 60%;
+    right: 5%;
+}
+
+.question-mark:nth-child(6) {
+    bottom: 5%;
+    right: 10%;
+}
+
+/* Animasi Tanda Tanya */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Styling untuk section */
+.doctors-section {
+    text-align: center;
+    padding: 50px;
+    height: 90vh;
+    margin-bottom: 50px;
+}
+
+/* Styling untuk judul */
+.doctors-section h1 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:#00449E;
+}
+
+/* Container untuk scroll horizontal */
+.doctors-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll; /* Mengizinkan scroll horizontal */
+    gap: 0px; /* Jarak antar dokter */
+    scroll-snap-type: x mandatory; /* Mengaktifkan snap ke dokter yang di tengah */
+    padding: 10px;
+}
+
+/* Styling untuk setiap box dokter */
+.doctor {
+    flex-shrink: 0; /* Agar setiap dokter tidak menyusut */
+    width: 300px; /* Lebar lebih besar dari normal untuk efek tumpang tindih */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #00449E;
+    background-color: #B4D4FF;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Transisi smooth saat scroll */
+    scroll-snap-align: center; /* Menempatkan dokter di tengah ketika di-scroll */
+}
+
+/* Styling untuk foto dokter */
+.doctor-photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Styling untuk nama dokter */
+.doctor-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styling untuk bio dokter */
+.doctor-bio {
+    font-size: 1em;
+    margin-top: 0;
+}
+
+/* Efek transformasi untuk dokter yang berada di tengah */
+.doctors-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.doctors-container::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 5px;
+}
+
+/* Styling tambahan untuk memberi efek saat berada di tengah */
+.doctor:nth-child(1) {
+    transform: scale(0.8); /* Skalakan dokter yang lebih jauh */
+    opacity: 0.7;
+}
+
+.doctor:nth-child(2) {
+    transform: scale(1); /* Skalakan dokter yang di tengah */
+    opacity: 1;
+}
+
+.doctor:nth-child(3) {
+    transform: scale(0.8); /* Skalakan dokter yang lebih jauh */
+    opacity: 0.7;
+}
+
+/* Section Motto Style */
+#motto {
+    padding: 50px 20px;
+    text-align: center;
+    height: 40vh;
+}
+
+#motto h1 {
+    font-size: 2.5rem;
+    color:#176B87;
+}
+
+/* Styling dasar footer */
+.footer {
+    background-color: rgba(0, 68, 158, 0.61);
+    color: #EEF5FF; /* Warna teks putih */
+    padding: 30px 0; /* Padding atas dan bawah */
+}
+
+/* Kontainer footer yang menggunakan Flexbox */
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Rata tengah horizontal */
+    margin: 0 auto;
+    padding: 20px 20px;
+    flex-wrap: wrap; /* Agar kolom dapat berurutan saat di layar kecil */
+}
+
+/* Styling untuk setiap kolom */
+.footer-logo img {
+    padding-left: 15%;
+    max-width: 200px;
+}
+
+.footer h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-contact ul,
+.footer-about p,
+.footer-address p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-contact li, 
+.footer-about li,
+.footer-about p,
+.footer-address p {
+    font-size: 0.9em;
+}
+
+.footer-contact ul, .footer-about ul {
+    max-width: 300px;
+    list-style: none;
+}
+
+.footer-address {
+    max-width: 400px;
+    padding-right: 10%;
+}
+
+/* Styling untuk footer-bottom */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center; /* Kolom menjadi vertikal */
+    }
+
+    .footer-logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-contact, .footer-about, .footer-address {
+        margin-bottom: 20px;
+    }
+}

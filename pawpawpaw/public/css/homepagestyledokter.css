@@ -1,0 +1,143 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Pastikan body mengambil seluruh tinggi dan lebar viewport */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Hindari scroll horizontal */
+    background-color: #EEF5FF;
+}
+
+/* Styling untuk header */
+header {
+    position: fixed; /* Agar header tetap di atas saat scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #E1EFFF; /* Background putih */
+    padding: 20px 20px; /* Padding untuk jarak antara konten dan tepi */
+    z-index: 1000; /* Agar header berada di atas elemen lain */
+}
+
+/* Container untuk logo dan menu */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Spasi antara logo dan menu */
+    align-items: center; /* Vertikal align */
+}
+
+/* Styling untuk logo */
+.logo {
+    margin: 0px;
+    width: 70px;
+}
+
+/* Styling untuk navigasi menu */
+.nav-links ul {
+    display: flex;
+    list-style: none; /* Menghilangkan bullet points */
+    margin-right: 50px;
+    padding: 0;
+}
+
+.nav-links li {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 15px; /* Jarak antar item menu */
+}
+
+.nav-links a {
+    text-decoration: none; /* Menghilangkan underline */
+    color: #00449E; /* Warna teks menu */
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Gaya ketika menu di-hover */
+.nav-links a:hover {
+    color: #176B87; /* Warna saat hover */
+}
+
+/* Styling untuk ikon */
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+
+#daftar-antrean {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Memusatkan secara horizontal */
+    margin-top: 150px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#daftar-antrean h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: rgba(0, 68, 158, 0.61);
+}
+
+/* Container untuk semua box reservasi */
+.antrean-container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Memusatkan secara horizontal */
+    background-color: #B4D4FF;
+    border-radius: 50px;
+    width: 70%;
+    padding: 30px;
+}
+
+.antrean-container h3 {
+    top: 30%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(0, 68, 158, 0.61);
+}
+
+/* Box reservasi */
+.reservasi-box {
+    background-color: rgba(96, 165, 255, 0.61);
+    padding: 10px;
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(96, 165, 255, 0.61);
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reservasi-box h3 {
+    margin: 0;
+    padding: 0 10px;
+    text-align: left;
+    font-size: 23px;
+    color: #00449E;
+}
+
+.reservasi-box p {
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #00449E;
+}
+
+.reservasi-box:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 68, 158, 0.61);
+}
